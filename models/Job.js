@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const db = require('../db/connection');
 
 const Job = db.define('job', {
-    titlle: {
+    title: {
         type: Sequelize.STRING,
     },
     description: {
@@ -20,7 +20,6 @@ const Job = db.define('job', {
     new_job: {
         type: Sequelize.INTEGER,
     }
-
 });
 
 module.exports = Job
